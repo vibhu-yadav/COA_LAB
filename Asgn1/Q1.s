@@ -67,4 +67,8 @@ valid:
     la      $a0,    nl
     syscall 
 
+# Exit (QTspim needs us to explicitly exit, MARS doesnt)
+    li      $v0,        10
+    syscall 
+
 

@@ -115,6 +115,10 @@ Anot0:
 
 
 printans:
-	# Print the GCD
+# Print the GCD
 	li      $v0,        1
 	syscall 
+
+# Exit (QTspim needs us to explicitly exit, MARS doesnt)
+    li      $v0,        10
+    syscall 
