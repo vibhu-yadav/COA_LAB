@@ -1,0 +1,29 @@
+Command line:
+   miniRISC_wrapper_test_isim_map.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  43147
+
+Fri Nov 11 14:51:45 2022
+
+
+ Elaboration Time: 0.75 sec
+
+ Current Memory Usage: 427.758 Meg
+
+ Total Signals          : 82859
+ Total Nets             : 55131
+ Total Signal Drivers   : 54850
+ Total Blocks           : 9537
+ Total Primitive Blocks : 4846
+ Total Processes        : 70866
+ Total Traceable Variables  : 32946
+ Total Scalar Nets and Variables : 1092470
+Total Line Count : 111387
+
+ Total Simulation Time: 5.29 sec
+
+ Current Memory Usage: 556.925 Meg
+
+Fri Nov 11 14:54:40 2022
+

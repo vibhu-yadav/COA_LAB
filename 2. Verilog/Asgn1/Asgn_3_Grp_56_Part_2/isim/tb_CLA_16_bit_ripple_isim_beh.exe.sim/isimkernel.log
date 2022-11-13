@@ -1,0 +1,29 @@
+Command line:
+   tb_CLA_16_bit_ripple_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49264
+
+Wed Aug 31 15:56:39 2022
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5806.88 Meg
+
+ Total Signals          : 53
+ Total Nets             : 114
+ Total Signal Drivers   : 40
+ Total Blocks           : 7
+ Total Primitive Blocks : 5
+ Total Processes        : 42
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 227
+Total Line Count : 55
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 5806.88 Meg
+
+Wed Aug 31 15:56:47 2022
+

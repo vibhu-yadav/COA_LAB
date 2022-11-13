@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "E:/IIT-KGP/SEM-5/COA-Lab/Tut/Asgn3_Part2/wrapper_CLA_4_bit_augmented.xst" -ofn "E:/IIT-KGP/SEM-5/COA-Lab/Tut/Asgn3_Part2/wrapper_CLA_4_bit_augmented.syr" 
+xst -intstyle ise -ifn "E:/IIT-KGP/SEM-5/COA-Lab/Tut/Asgn3_Part2/wrapper_CLA_4_bit_augmented.xst" -ofn "E:/IIT-KGP/SEM-5/COA-Lab/Tut/Asgn3_Part2/wrapper_CLA_4_bit_augmented.syr" 

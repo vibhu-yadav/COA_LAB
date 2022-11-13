@@ -1,0 +1,17 @@
+ISim log file
+Running: E:\IIT-KGP\SEM-5\COA-Lab\Tut\Asgn3_Part2\tb_carry_look_ahead_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/IIT-KGP/SEM-5/COA-Lab/Tut/Asgn3_Part2/tb_carry_look_ahead_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Propagate = 15, Generate = 12, Carry_in = 1, Carry = 15, Carry_out = 1, Propagate_out = 1, Generate_out = 1
+Propagate =  5, Generate =  4, Carry_in = 0, Carry =  8, Carry_out = 0, Propagate_out = 0, Generate_out = 0
+Propagate = 11, Generate =  9, Carry_in = 0, Carry =  6, Carry_out = 1, Propagate_out = 0, Generate_out = 1
+Propagate = 10, Generate = 14, Carry_in = 1, Carry = 13, Carry_out = 1, Propagate_out = 0, Generate_out = 1

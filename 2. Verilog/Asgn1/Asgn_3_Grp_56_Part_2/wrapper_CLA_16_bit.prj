@@ -1,0 +1,4 @@
+verilog work "CLA_4_bit_augmented.v"
+verilog work "carry_look_ahead.v"
+verilog work "CLA_16_bit.v"
+verilog work "wrapper_CLA_16_bit.v"

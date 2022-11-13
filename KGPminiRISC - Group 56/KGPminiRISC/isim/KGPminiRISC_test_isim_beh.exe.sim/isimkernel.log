@@ -1,0 +1,29 @@
+Command line:
+   KGPminiRISC_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  59029
+
+Fri Nov 11 16:04:01 2022
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 188.654 Meg
+
+ Total Signals          : 696
+ Total Nets             : 2681
+ Total Signal Drivers   : 366
+ Total Blocks           : 85
+ Total Primitive Blocks : 67
+ Total Processes        : 404
+ Total Traceable Variables  : 688
+ Total Scalar Nets and Variables : 113896
+Total Line Count : 1493
+
+ Total Simulation Time: 8 sec
+
+ Current Memory Usage: 264.155 Meg
+
+Fri Nov 11 16:04:14 2022
+

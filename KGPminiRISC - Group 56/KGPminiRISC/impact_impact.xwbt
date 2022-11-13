@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/vibhu/Downloads/KGPminiRISC/impact.xsl
+OUTFILE=/home/vibhu/Downloads/KGPminiRISC/impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=/home/vibhu/Downloads/KGPminiRISC
+LICENSE=iMPACT
+USER_INFO=iMPACT

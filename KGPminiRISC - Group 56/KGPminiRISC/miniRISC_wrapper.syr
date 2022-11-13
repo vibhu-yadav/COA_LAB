@@ -1,0 +1,727 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.02 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.02 secs
+ 
+--> 
+Reading design: miniRISC_wrapper.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "miniRISC_wrapper.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "miniRISC_wrapper"
+Output Format                      : NGC
+Target Device                      : xc7a100t-1-csg324
+
+---- Source Options
+Top Module Name                    : miniRISC_wrapper
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/CLA4bit.v" into library work
+Parsing module <CLA_4_bit_augmented>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/CarryLookAhead.v" into library work
+Parsing module <carry_look_ahead>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/CLA16bit.v" into library work
+Parsing module <CLA_16_bit>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/Adder32Bit.v" into library work
+Parsing module <adder_32_bit>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/diff_encoder.v" into library work
+Parsing module <encoder>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/Shifter.v" into library work
+Parsing module <shifter>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/Mux32bit2to1.v" into library work
+Parsing module <mux_32_to_1>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Diff.v" into library work
+Parsing module <diff>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/SignExtend.v" into library work
+Parsing module <sign_extend>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/RegisterFile.v" into library work
+Parsing module <register>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/ProgramCounter.v" into library work
+Parsing module <program_counter>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/PCIncrement.v" into library work
+Parsing module <PC_increment>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/Mux5bit3to1.v" into library work
+Parsing module <mux_5x3_to_1>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/Mux32bit3to1.v" into library work
+Parsing module <mux_32x3_to_1>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/JumpControl.v" into library work
+Parsing module <jump_control>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/InstructionDecoder.v" into library work
+Parsing module <instruction_decode>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/DFlipFlop.v" into library work
+Parsing module <d_flip_flop>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/BranchUnit.v" into library work
+Parsing module <branch_unit>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/ALU.v" into library work
+Parsing module <ALU_unit>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/ipcore_dir/BlockROM.v" into library work
+Parsing module <BlockROM>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/ipcore_dir/BlockRAM.v" into library work
+Parsing module <BlockRAM>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/Datapath.v" into library work
+Parsing module <DataPath>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/ControlUnit.v" into library work
+Parsing module <ControlUnit>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/KGPminiRISC.v" into library work
+Parsing module <KGPminiRISC>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/clk_divider.v" into library work
+Parsing module <clk_divider>.
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/miniRISC_wrapper.v" into library work
+Parsing module <miniRISC_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <miniRISC_wrapper>.
+
+Elaborating module <clk_divider>.
+WARNING:HDLCompiler:1127 - "/home/vibhu/Downloads/TEMP/miniRISC_wrapper.v" Line 31: Assignment to out_clk ignored, since the identifier is never used
+
+Elaborating module <KGPminiRISC>.
+
+Elaborating module <ControlUnit>.
+
+Elaborating module <DataPath>.
+
+Elaborating module <BlockROM>.
+WARNING:HDLCompiler:1499 - "/home/vibhu/Downloads/TEMP/ipcore_dir/BlockROM.v" Line 39: Empty module <BlockROM> remains a black box.
+
+Elaborating module <BlockRAM>.
+WARNING:HDLCompiler:1499 - "/home/vibhu/Downloads/TEMP/ipcore_dir/BlockRAM.v" Line 39: Empty module <BlockRAM> remains a black box.
+
+Elaborating module <instruction_decode>.
+WARNING:HDLCompiler:1127 - "/home/vibhu/Downloads/TEMP/Verilog/Datapath.v" Line 100: Assignment to shamt ignored, since the identifier is never used
+
+Elaborating module <program_counter>.
+
+Elaborating module <PC_increment>.
+
+Elaborating module <ALU_unit>.
+
+Elaborating module <mux_32_to_1>.
+
+Elaborating module <adder_32_bit>.
+
+Elaborating module <CLA_16_bit>.
+
+Elaborating module <CLA_4_bit_augmented>.
+
+Elaborating module <carry_look_ahead>.
+
+Elaborating module <shifter>.
+
+Elaborating module <diff>.
+WARNING:HDLCompiler:1127 - "/home/vibhu/Downloads/TEMP/Diff.v" Line 39: Assignment to temp ignored, since the identifier is never used
+
+Elaborating module <encoder>.
+WARNING:HDLCompiler:189 - "/home/vibhu/Downloads/TEMP/Verilog/ALU.v" Line 59: Size mismatch in connection of port <out_diff>. Formal port size is 6-bit while actual signal size is 32-bit.
+
+Elaborating module <register>.
+
+Elaborating module <sign_extend>.
+
+Elaborating module <jump_control>.
+
+Elaborating module <branch_unit>.
+
+Elaborating module <d_flip_flop>.
+
+Elaborating module <mux_5x3_to_1>.
+
+Elaborating module <mux_32x3_to_1>.
+WARNING:Xst:2972 - "/home/vibhu/Downloads/TEMP/miniRISC_wrapper.v" line 31. All outputs of instance <clkdivl> of block <clk_divider> are unconnected in block <miniRISC_wrapper>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <miniRISC_wrapper>.
+    Related source file is "/home/vibhu/Downloads/TEMP/miniRISC_wrapper.v".
+INFO:Xst:3210 - "/home/vibhu/Downloads/TEMP/miniRISC_wrapper.v" line 31: Output port <out_clk> of the instance <clkdivl> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <miniRISC_wrapper> synthesized.
+
+Synthesizing Unit <KGPminiRISC>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Verilog/KGPminiRISC.v".
+    Summary:
+	no macro.
+Unit <KGPminiRISC> synthesized.
+
+Synthesizing Unit <ControlUnit>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Verilog/ControlUnit.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <regDst<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <regWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <memWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <memToReg<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <memToReg<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUsrc>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUop<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUop<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUop<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUop<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUop<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUsel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <branch>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <jumpAddr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lblSel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <regDst<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  16 Latch(s).
+	inferred  49 Multiplexer(s).
+Unit <ControlUnit> synthesized.
+
+Synthesizing Unit <DataPath>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Verilog/Datapath.v".
+        ra = 5'b11111
+INFO:Xst:3210 - "/home/vibhu/Downloads/TEMP/Verilog/Datapath.v" line 92: Output port <shamt> of the instance <instructionDecoder> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <DataPath> synthesized.
+
+Synthesizing Unit <instruction_decode>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Verilog/InstructionDecoder.v".
+    Summary:
+	no macro.
+Unit <instruction_decode> synthesized.
+
+Synthesizing Unit <program_counter>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Verilog/ProgramCounter.v".
+    Found 32-bit register for signal <out>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <program_counter> synthesized.
+
+Synthesizing Unit <PC_increment>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Verilog/PCIncrement.v".
+    Found 32-bit adder for signal <PC_incremented> created at line 34.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <PC_increment> synthesized.
+
+Synthesizing Unit <ALU_unit>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Verilog/ALU.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <carry>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Latch(s).
+	inferred   6 Multiplexer(s).
+Unit <ALU_unit> synthesized.
+
+Synthesizing Unit <mux_32_to_1>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Verilog/Mux32bit2to1.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_32_to_1> synthesized.
+
+Synthesizing Unit <adder_32_bit>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Verilog/Adder32Bit.v".
+    Summary:
+	no macro.
+Unit <adder_32_bit> synthesized.
+
+Synthesizing Unit <CLA_16_bit>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Verilog/CLA16bit.v".
+INFO:Xst:3210 - "/home/vibhu/Downloads/TEMP/Verilog/CLA16bit.v" line 42: Output port <c_out> of the instance <CLA_4_bit_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vibhu/Downloads/TEMP/Verilog/CLA16bit.v" line 43: Output port <c_out> of the instance <CLA_4_bit_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vibhu/Downloads/TEMP/Verilog/CLA16bit.v" line 44: Output port <c_out> of the instance <CLA_4_bit_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vibhu/Downloads/TEMP/Verilog/CLA16bit.v" line 45: Output port <c_out> of the instance <CLA_4_bit_4> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <CLA_16_bit> synthesized.
+
+Synthesizing Unit <CLA_4_bit_augmented>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Verilog/CLA4bit.v".
+    Summary:
+Unit <CLA_4_bit_augmented> synthesized.
+
+Synthesizing Unit <carry_look_ahead>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Verilog/CarryLookAhead.v".
+    Summary:
+	no macro.
+Unit <carry_look_ahead> synthesized.
+
+Synthesizing Unit <shifter>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Verilog/Shifter.v".
+    Found 32-bit shifter arithmetic right for signal <in[31]_shamt[31]_shift_right_0_OUT> created at line 45
+    Found 32-bit shifter logical left for signal <in[31]_shamt[31]_shift_left_2_OUT> created at line 49
+    Found 32-bit shifter logical right for signal <in[31]_shamt[31]_shift_right_3_OUT> created at line 51
+    Summary:
+	inferred   6 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <shifter> synthesized.
+
+Synthesizing Unit <diff>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Diff.v".
+INFO:Xst:3210 - "/home/vibhu/Downloads/TEMP/Diff.v" line 39: Output port <c_out> of the instance <n_minus_one> is unconnected or connected to loadless signal.
+    Summary:
+Unit <diff> synthesized.
+
+Synthesizing Unit <encoder>.
+    Related source file is "/home/vibhu/Downloads/TEMP/diff_encoder.v".
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <encoder> synthesized.
+
+Synthesizing Unit <register>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Verilog/RegisterFile.v".
+    Found 1024-bit register for signal <n0043[1023:0]>.
+    Found 32-bit 32-to-1 multiplexer for signal <readReg_1> created at line 59.
+    Found 32-bit 32-to-1 multiplexer for signal <readReg_2> created at line 60.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred  34 Multiplexer(s).
+Unit <register> synthesized.
+
+Synthesizing Unit <sign_extend>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Verilog/SignExtend.v".
+WARNING:Xst:647 - Input <func> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <sign_extend> synthesized.
+
+Synthesizing Unit <jump_control>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Verilog/JumpControl.v".
+    Summary:
+	no macro.
+Unit <jump_control> synthesized.
+
+Synthesizing Unit <branch_unit>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Verilog/BranchUnit.v".
+    Summary:
+	no macro.
+Unit <branch_unit> synthesized.
+
+Synthesizing Unit <d_flip_flop>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Verilog/DFlipFlop.v".
+    Found 1-bit register for signal <q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <d_flip_flop> synthesized.
+
+Synthesizing Unit <mux_5x3_to_1>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Verilog/Mux5bit3to1.v".
+    Summary:
+	no macro.
+Unit <mux_5x3_to_1> synthesized.
+
+Synthesizing Unit <mux_32x3_to_1>.
+    Related source file is "/home/vibhu/Downloads/TEMP/Verilog/Mux32bit3to1.v".
+    Summary:
+	no macro.
+Unit <mux_32x3_to_1> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 1024-bit register                                     : 1
+ 32-bit register                                       : 1
+# Latches                                              : 17
+ 1-bit latch                                           : 17
+# Multiplexers                                         : 135
+ 1-bit 2-to-1 multiplexer                              : 48
+ 10-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 51
+ 32-bit 32-to-1 multiplexer                            : 2
+ 5-bit 2-to-1 multiplexer                              : 1
+ 6-bit 2-to-1 multiplexer                              : 32
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 35
+ 32-bit xor2                                           : 3
+ 4-bit xor2                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/BlockRAM.ngc>.
+Reading core <ipcore_dir/BlockROM.ngc>.
+Loading core <BlockRAM> for timing and area information for instance <dataMemory>.
+Loading core <BlockROM> for timing and area information for instance <instructionMemory>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 1057
+ Flip-Flops                                            : 1057
+# Multiplexers                                         : 135
+ 1-bit 2-to-1 multiplexer                              : 48
+ 10-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 51
+ 32-bit 32-to-1 multiplexer                            : 2
+ 5-bit 2-to-1 multiplexer                              : 1
+ 6-bit 2-to-1 multiplexer                              : 32
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 35
+ 32-bit xor2                                           : 3
+ 4-bit xor2                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <miniRISC_wrapper> ...
+
+Optimizing unit <program_counter> ...
+
+Optimizing unit <DataPath> ...
+
+Optimizing unit <ALU_unit> ...
+
+Optimizing unit <diff> ...
+
+Optimizing unit <encoder> ...
+
+Optimizing unit <shifter> ...
+
+Optimizing unit <register> ...
+
+Optimizing unit <ControlUnit> ...
+INFO:Xst:2261 - The FF/Latch <regDst_0> in Unit <ControlUnit> is equivalent to the following FF/Latch, which will be removed : <memToReg_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block miniRISC_wrapper, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1057
+ Flip-Flops                                            : 1057
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : miniRISC_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3084
+#      GND                         : 3
+#      INV                         : 2
+#      LUT1                        : 28
+#      LUT2                        : 79
+#      LUT3                        : 1073
+#      LUT4                        : 98
+#      LUT5                        : 281
+#      LUT6                        : 1345
+#      MUXCY                       : 29
+#      MUXF7                       : 113
+#      VCC                         : 3
+#      XORCY                       : 30
+# FlipFlops/Latches                : 1073
+#      FDC                         : 33
+#      FDCE                        : 1024
+#      LD                          : 15
+#      LDE_1                       : 1
+# RAMS                             : 2
+#      RAMB36E1                    : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 28
+#      IBUF                        : 12
+#      OBUF                        : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1073  out of  126800     0%  
+ Number of Slice LUTs:                 2906  out of  63400     4%  
+    Number used as Logic:              2906  out of  63400     4%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2907
+   Number with an unused Flip Flop:    1834  out of   2907    63%  
+   Number with an unused LUT:             1  out of   2907     0%  
+   Number of fully used LUT-FF pairs:  1072  out of   2907    36%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          29
+ Number of bonded IOBs:                  29  out of    210    13%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of    135     1%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------------------------------------+---------------------------+-------+
+Clock Signal                                                                          | Clock buffer(FF name)     | Load  |
+--------------------------------------------------------------------------------------+---------------------------+-------+
+clk                                                                                   | BUFGP                     | 1059  |
+risc/DP/ALU/ALUop[4]_GND_28_o_equal_4_o(risc/DP/ALU/ALUop[4]_GND_28_o_equal_4_o<4>1:O)| NONE(*)(risc/DP/ALU/carry)| 1     |
+risc/CU/_n0122(risc/CU/Mmux__n01221:O)                                                | NONE(*)(risc/CU/ALUop_0)  | 15    |
+--------------------------------------------------------------------------------------+---------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                   | Buffer(FF name)                                                                                                                                                | Load  |
+-----------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+risc/DP/dataMemory/N1(risc/DP/dataMemory/XST_GND:G)              | NONE(risc/DP/dataMemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)       | 2     |
+risc/DP/instructionMemory/N1(risc/DP/instructionMemory/XST_GND:G)| NONE(risc/DP/instructionMemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)| 2     |
+-----------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 11.245ns (Maximum Frequency: 88.932MHz)
+   Minimum input arrival time before clock: 1.173ns
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 11.245ns (frequency: 88.932MHz)
+  Total number of paths / destination ports: 264719795 / 1088
+-------------------------------------------------------------------------
+Delay:               11.245ns (Levels of Logic = 15)
+  Source:            risc/DP/registerFile/registerMemory_0_835 (FF)
+  Destination:       risc/DP/PC/out_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: risc/DP/registerFile/registerMemory_0_835 to risc/DP/PC/out_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.478   0.790  risc/DP/registerFile/registerMemory_0_835 (risc/DP/registerFile/registerMemory_0_835)
+     LUT6:I2->O            1   0.124   0.776  risc/DP/registerFile/Mmux_readReg_1_876 (risc/DP/registerFile/Mmux_readReg_1_876)
+     LUT6:I2->O            1   0.124   0.000  risc/DP/registerFile/Mmux_readReg_1_325 (risc/DP/registerFile/Mmux_readReg_1_325)
+     MUXF7:I1->O          16   0.368   0.519  risc/DP/registerFile/Mmux_readReg_1_2_f7_24 (risc/DP/readReg_1<3>)
+     LUT2:I1->O            1   0.124   0.919  risc/DP/ALU/shifter1/Sh1981_SW3 (N311)
+     LUT6:I1->O            5   0.124   0.743  risc/DP/ALU/shifter1/Sh1981 (risc/DP/ALU/shifter1/Sh198)
+     LUT6:I3->O            2   0.124   0.427  risc/DP/ALU/shifter1/Sh2381 (risc/DP/ALU/shifter1/Sh238)
+     LUT6:I5->O            1   0.124   0.421  risc/DP/ALU/Mmux_result126 (risc/DP/ALU/Mmux_result125)
+     LUT6:I5->O            1   0.124   0.421  risc/DP/ALU/Mmux_result127 (risc/DP/ALU/Mmux_result126)
+     LUT6:I5->O            2   0.124   0.925  risc/DP/ALU/Mmux_result128 (risc/DP/result<14>)
+     LUT6:I1->O            1   0.124   0.421  risc/DP/ALU/zero1_SW0 (N508)
+     LUT6:I5->O            1   0.124   0.421  risc/DP/ALU/zero2 (risc/DP/ALU/zero1)
+     LUT6:I5->O            1   0.124   0.399  risc/DP/ALU/zero4_SW0 (N74)
+     MUXF7:S->O            1   0.465   0.536  risc/DP/ALU/zero7_SW0 (N344)
+     LUT6:I4->O           32   0.124   0.574  risc/DP/branchUnit/jump3 (risc/DP/branchUnit/jump)
+     LUT5:I4->O            1   0.124   0.000  risc/DP/branchUnit/mux3/Mmux_out110 (risc/DP/nextInstrAddr<0>)
+     FDC:D                     0.030          risc/DP/PC/out_0
+    ----------------------------------------
+    Total                     11.245ns (2.953ns logic, 8.292ns route)
+                                       (26.3% logic, 73.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1057 / 1057
+-------------------------------------------------------------------------
+Offset:              1.173ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       risc/DP/DFF/q (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to risc/DP/DFF/q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1057   0.001   0.678  rst_IBUF (rst_IBUF)
+     FDC:CLR                   0.494          risc/DP/DFF/q
+    ----------------------------------------
+    Total                      1.173ns (0.495ns logic, 0.678ns route)
+                                       (42.2% logic, 57.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------------------------------+---------+---------+---------+---------+
+                                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------+---------+---------+---------+---------+
+clk                                    |   11.245|         |    3.888|         |
+risc/CU/_n0122                         |         |   11.472|         |         |
+risc/DP/ALU/ALUop[4]_GND_28_o_equal_4_o|    1.060|         |         |         |
+---------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock risc/DP/ALU/ALUop[4]_GND_28_o_equal_4_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.592|         |         |         |
+risc/CU/_n0122 |         |    7.757|         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 27.00 secs
+Total CPU time to Xst completion: 26.66 secs
+ 
+--> 
+
+
+Total memory usage is 497360 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   25 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

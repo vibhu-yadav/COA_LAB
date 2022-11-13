@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/IIT-KGP/SEM-5/COA-Lab/Tut/Asgn3_Part1/full_adder.xst" -ofn "E:/IIT-KGP/SEM-5/COA-Lab/Tut/Asgn3_Part1/full_adder.syr" 

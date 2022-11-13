@@ -1,0 +1,3 @@
+verilog work "../../Asgn3_P1/half_adder.v"
+verilog work "../../Asgn3_P1/full_adder.v"
+verilog work "../../Asgn3_P1/s8_bit_adder.v"

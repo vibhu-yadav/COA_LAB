@@ -1,0 +1,17 @@
+# Output products list for <BlockRAM>
+BlockRAM/blk_mem_gen_v7_3_readme.txt
+BlockRAM/doc/blk_mem_gen_v7_3_vinfo.html
+BlockRAM/doc/pg058-blk-mem-gen.pdf
+BlockRAM.asy
+BlockRAM.gise
+BlockRAM.mif
+BlockRAM.ngc
+BlockRAM.sym
+BlockRAM.v
+BlockRAM.veo
+BlockRAM.xco
+BlockRAM.xise
+BlockRAM_flist.txt
+BlockRAM_xmdf.tcl
+_xmsgs/pn_parser.xmsgs
+summary.log

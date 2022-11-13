@@ -1,0 +1,5 @@
+verilog work "../../Asgn3_P1/half_adder.v"
+verilog work "../../Asgn3_P1/full_adder.v"
+verilog work "s4_bit_adder.v"
+verilog work "tb_4_bit_adder.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

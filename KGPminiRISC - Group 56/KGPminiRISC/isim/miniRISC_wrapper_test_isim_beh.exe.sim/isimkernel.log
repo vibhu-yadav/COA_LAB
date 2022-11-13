@@ -1,0 +1,29 @@
+Command line:
+   miniRISC_wrapper_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  2
+     -socket  47825
+
+Fri Nov 11 16:10:30 2022
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 188.674 Meg
+
+ Total Signals          : 704
+ Total Nets             : 2682
+ Total Signal Drivers   : 366
+ Total Blocks           : 87
+ Total Primitive Blocks : 68
+ Total Processes        : 405
+ Total Traceable Variables  : 690
+ Total Scalar Nets and Variables : 113946
+Total Line Count : 1502
+
+ Total Simulation Time: 8.07 sec
+
+ Current Memory Usage: 264.176 Meg
+
+Fri Nov 11 16:10:47 2022
+

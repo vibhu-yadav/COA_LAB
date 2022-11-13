@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/IIT-KGP/SEM-5/COA-Lab/Tut/Asgn3_Part2/CLA_16_bit_ripple.xst" -ofn "E:/IIT-KGP/SEM-5/COA-Lab/Tut/Asgn3_Part2/CLA_16_bit_ripple.syr" 

@@ -1,0 +1,80 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/vibhu/Downloads/TEMP/miniRISC_wrapper_test_isim_beh.exe -prj /home/vibhu/Downloads/TEMP/miniRISC_wrapper_test_beh.prj work.miniRISC_wrapper_test work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/CLA4bit.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/CarryLookAhead.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/CLA16bit.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/Adder32Bit.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/diff_encoder.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/Shifter.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/Mux32bit2to1.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Diff.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/SignExtend.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/RegisterFile.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/ProgramCounter.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/PCIncrement.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/Mux5bit3to1.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/Mux32bit3to1.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/JumpControl.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/InstructionDecoder.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/DFlipFlop.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/BranchUnit.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/ALU.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/ipcore_dir/BlockROM.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/ipcore_dir/BlockRAM.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/Datapath.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/ControlUnit.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/Verilog/KGPminiRISC.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/clk_divider.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/miniRISC_wrapper.v" into library work
+Analyzing Verilog file "/home/vibhu/Downloads/TEMP/miniRISC_wrapper_test.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "/home/vibhu/Downloads/TEMP/Verilog/ALU.v" Line 59: Size mismatch in connection of port <out_diff>. Formal port size is 6-bit while actual signal size is 32-bit.
+Completed static elaboration
+Fuse Memory Usage: 85096 KB
+Fuse CPU Usage: 480 ms
+Compiling module clk_divider
+Compiling module ControlUnit
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="artix...
+Compiling module BlockROM
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="artix...
+Compiling module BlockRAM
+Compiling module instruction_decode
+Compiling module program_counter
+Compiling module PC_increment
+Compiling module mux_32_to_1
+Compiling module CLA_4_bit_augmented
+Compiling module carry_look_ahead
+Compiling module CLA_16_bit
+Compiling module adder_32_bit
+Compiling module shifter
+Compiling module encoder
+Compiling module diff
+Compiling module ALU_unit
+Compiling module register
+Compiling module sign_extend
+Compiling module jump_control
+Compiling module branch_unit
+Compiling module d_flip_flop
+Compiling module mux_5x3_to_1
+Compiling module mux_32x3_to_1
+Compiling module DataPath
+Compiling module KGPminiRISC
+Compiling module miniRISC_wrapper
+Compiling module miniRISC_wrapper_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 35 Verilog Units
+Built simulation executable /home/vibhu/Downloads/TEMP/miniRISC_wrapper_test_isim_beh.exe
+Fuse Memory Usage: 2221384 KB
+Fuse CPU Usage: 580 ms
+GCC CPU Usage: 3030 ms

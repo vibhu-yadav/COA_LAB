@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/vibhu/Downloads/TEMP/miniRISC_wrapper.ncd
+OUTFILE=/home/vibhu/Downloads/TEMP/miniRISC_wrapper.bit
+FAMILY=Artix7
+PART=xc7a100t-1csg324
+WORKINGDIR=/home/vibhu/Downloads/TEMP
+LICENSE=WebPack
+USER_INFO=212527600_0_0_977

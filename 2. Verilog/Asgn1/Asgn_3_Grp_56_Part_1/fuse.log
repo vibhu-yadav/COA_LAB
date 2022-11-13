@@ -1,0 +1,21 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/IIT-KGP/SEM-5/COA-Lab/Tut/Asgn_3_Grp_56_Part_1/tb_4_bit_adder_isim_beh.exe -prj E:/IIT-KGP/SEM-5/COA-Lab/Tut/Asgn_3_Grp_56_Part_1/tb_4_bit_adder_beh.prj work.tb_4_bit_adder work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/IIT-KGP/SEM-5/COA-Lab/Tut/Asgn_3_Grp_56_Part_1/../../Asgn3_P1/half_adder.v" into library work
+Analyzing Verilog file "E:/IIT-KGP/SEM-5/COA-Lab/Tut/Asgn_3_Grp_56_Part_1/../../Asgn3_P1/full_adder.v" into library work
+Analyzing Verilog file "E:/IIT-KGP/SEM-5/COA-Lab/Tut/Asgn_3_Grp_56_Part_1/s4_bit_adder.v" into library work
+Analyzing Verilog file "E:/IIT-KGP/SEM-5/COA-Lab/Tut/Asgn_3_Grp_56_Part_1/tb_4_bit_adder.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module half_adder
+Compiling module full_adder
+Compiling module s4_bit_adder
+Compiling module tb_4_bit_adder
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+ERROR:Simulator:904 - Unable to remove previous simulation file isim/tb_4_bit_adder_isim_beh.exe.sim/tb_4_bit_adder_isim_beh.exe. Please check if you have another instance of this simulation running on your system, terminate it and then recompile your design. System Error Message: boost::filesystem::remove: Access is denied: "isim\tb_4_bit_adder_isim_beh.exe.sim\tb_4_bit_adder_isim_beh.exe"
+ERROR:Simulator:861 - Failed to link the design

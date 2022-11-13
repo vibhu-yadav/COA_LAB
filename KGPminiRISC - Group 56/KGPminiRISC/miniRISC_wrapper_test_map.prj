@@ -1,0 +1,2 @@
+verilog work "netgen/map/miniRISC_wrapper_map.v"
+verilog work "miniRISC_wrapper_test.v"

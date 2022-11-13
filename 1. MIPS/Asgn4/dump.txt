@@ -1,0 +1,64 @@
+recursive_sort:
+
+    addi $sp, $sp, -16 # allocate space for 3 numbers and $ra on stack
+
+    sw $ra, 12($sp) # save $ra [return address]
+    sw $a1, 0($sp) # save $a1 at sp[0] , l = left
+    sw $a2, 4($sp) # save $a2 at sp[1] , r = right
+    sw $a1, 8($sp) # save $a1 at sp[2] , p = left
+
+    la $s0, $a0 # load address of array, s0 = A
+
+#     # move $s0, $a1 # l = left
+#     # move $s1, $a2 # r = right
+#     # move $s2, $a1 # p = left
+
+while_main:
+
+    slt $t0, $a1, $a2 # t0 = (l < r)
+    bne exit_sort
+
+    sll $t1, 0($sp), 2 # t1 = 4 * l
+    add $t1, $t1, $s0 # t1 = A[l]
+
+    sll $t2, 4($sp), 2 # t2 = 4 * r
+    add $t2, $t2, $s0 # t2 = A[r]
+
+    sll $t3, 8($sp), 2 # t3 = 4 * p
+    add $t3, $t3, $s0 # t3 = A[p]
+
+    while_inner_1:
+    
+    bgt $t1, $t3, while_inner_2 # if A[l] > A[p] goto while_inner_2
+    bge 0($sp), $a2, while_inner_2 # if l >= right goto while_inner_2
+
+    addi 0($sp), 0($sp), 1 # l++
+
+    while_inner_2:
+
+    blt $t2, $t3, while_body # if A[r] < A[p] goto while_body
+    ble 4($sp), $a1, while_body # if r <= left goto while_body 
+
+    addi 4($sp), 4($sp), -1 # r--
+
+    slt $t0, 0($sp), 4($sp) # t0 = (l < r)
+    bne $t0, $zero, while_end
+
+    while_body:
+
+
+
+    while_end:
+    
+
+exit_sort:
+
+    lw $ra, 12($sp)
+    
+    addi $sp, $sp, 24 # Restore Stack
+    jr $ra
+
+
+
+0 1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9 10

@@ -1,0 +1,38 @@
+xst -intstyle ise -ifn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.xst" -ofn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.xst" -ofn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.xst" -ofn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.xst" -ofn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.xst" -ofn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.xst" -ofn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.xst" -ofn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.xst" -ofn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.xst" -ofn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.xst" -ofn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.xst" -ofn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.xst" -ofn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.xst" -ofn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.xst" -ofn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.xst" -ofn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.xst" -ofn "/home/vibhu/KGPminiRISC/miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "/home/vibhu/Downloads/KGPminiRISC/miniRISC_wrapper.xst" -ofn "/home/vibhu/Downloads/KGPminiRISC/miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "/home/vibhu/Downloads/KGPminiRISC/miniRISC_wrapper.xst" -ofn "/home/vibhu/Downloads/KGPminiRISC/miniRISC_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pins.ucf -p xc7a100t-csg324-1 miniRISC_wrapper.ngc miniRISC_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o miniRISC_wrapper_map.ncd miniRISC_wrapper.ngd miniRISC_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off miniRISC_wrapper_map.ncd miniRISC_wrapper.ncd miniRISC_wrapper.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml miniRISC_wrapper.twx miniRISC_wrapper.ncd -o miniRISC_wrapper.twr miniRISC_wrapper.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f miniRISC_wrapper.ut miniRISC_wrapper.ncd 
+xst -intstyle ise -ifn "/home/vibhu/Downloads/KGPminiRISC/miniRISC_wrapper.xst" -ofn "/home/vibhu/Downloads/KGPminiRISC/miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "/home/vibhu/Downloads/KGPminiRISC/miniRISC_wrapper.xst" -ofn "/home/vibhu/Downloads/KGPminiRISC/miniRISC_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pins.ucf -p xc7a100t-csg324-1 miniRISC_wrapper.ngc miniRISC_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o miniRISC_wrapper_map.ncd miniRISC_wrapper.ngd miniRISC_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off miniRISC_wrapper_map.ncd miniRISC_wrapper.ncd miniRISC_wrapper.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml miniRISC_wrapper.twx miniRISC_wrapper.ncd -o miniRISC_wrapper.twr miniRISC_wrapper.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f miniRISC_wrapper.ut miniRISC_wrapper.ncd 
+netgen -intstyle ise -s 1  -pcf miniRISC_wrapper.pcf -sdf_anno true -sdf_path "netgen/map" -insert_glbl true -w -dir netgen/map -ofmt verilog -sim miniRISC_wrapper_map.ncd miniRISC_wrapper_map.v 
+xst -intstyle ise -ifn "/home/vibhu/Downloads/TEMP/miniRISC_wrapper.xst" -ofn "/home/vibhu/Downloads/TEMP/miniRISC_wrapper.syr" 
+xst -intstyle ise -ifn "/home/vibhu/Downloads/TEMP/miniRISC_wrapper.xst" -ofn "/home/vibhu/Downloads/TEMP/miniRISC_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pins.ucf -p xc7a100t-csg324-1 miniRISC_wrapper.ngc miniRISC_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o miniRISC_wrapper_map.ncd miniRISC_wrapper.ngd miniRISC_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off miniRISC_wrapper_map.ncd miniRISC_wrapper.ncd miniRISC_wrapper.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml miniRISC_wrapper.twx miniRISC_wrapper.ncd -o miniRISC_wrapper.twr miniRISC_wrapper.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f miniRISC_wrapper.ut miniRISC_wrapper.ncd 
